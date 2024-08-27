@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/edauandes/Desktop/EDA/search/src/search.cpp" "CMakeFiles/test.dir/src/search.cpp.o" "gcc" "CMakeFiles/test.dir/src/search.cpp.o.d"
-  "/home/edauandes/Desktop/EDA/search/tests/test.cpp" "CMakeFiles/test.dir/tests/test.cpp.o" "gcc" "CMakeFiles/test.dir/tests/test.cpp.o.d"
+  "/home/edauandes/Desktop/EDA-1/search/src/search.cpp" "CMakeFiles/test.dir/src/search.cpp.o" "gcc" "CMakeFiles/test.dir/src/search.cpp.o.d"
+  "/home/edauandes/Desktop/EDA-1/search/tests/test.cpp" "CMakeFiles/test.dir/tests/test.cpp.o" "gcc" "CMakeFiles/test.dir/tests/test.cpp.o.d"
   )
 
 # Targets to which this target links.

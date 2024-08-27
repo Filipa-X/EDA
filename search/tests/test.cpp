@@ -22,6 +22,7 @@ int main(int argc, char* argv[]) {
 
     long totalElapsedTime = 0;
 
+/******************
     for(int j = 0; j < 999999; j++) { //999.999 es fijo porque keys son 1.000.000
         auto start = chrono :: high_resolution_clock :: now();
         int count = busquedaSecuencial(words, keys[j]);
@@ -31,9 +32,19 @@ int main(int argc, char* argv[]) {
         totalElapsedTime += elapsed;
         cout << elapsed << endl;
     }
+*************************/
 
-    double average = totalElapsedTime / 999999;
-    cout << "secuencial: " << average << endl;
+    int y = 0;
+    for(int k = 0; k < 999999; k++) {
+        int x = busquedaBinaria(words, keys[k]);
+        y += x;
+    }
+
+    cout << y << endl;
+
+
+    //double average = totalElapsedTime / 999999;
+    //cout << "secuencial: " << average << endl;
 
     return 0;
 }

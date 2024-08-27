@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/edauandes/Desktop/EDA/search/build"
+			"value" : "/home/edauandes/Desktop/EDA-1/search/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -451,7 +451,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/edauandes/Desktop/EDA/search"
+			"value" : "/home/edauandes/Desktop/EDA-1/search"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1047,7 +1047,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/edauandes/Desktop/EDA/search/build"
+			"value" : "/home/edauandes/Desktop/EDA-1/search/build"
 		},
 		{
 			"name" : "search_IS_TOP_LEVEL",
@@ -1071,7 +1071,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/edauandes/Desktop/EDA/search"
+			"value" : "/home/edauandes/Desktop/EDA-1/search"
 		}
 	],
 	"kind" : "cache",

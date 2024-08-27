@@ -39,11 +39,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel ..."
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/edauandes/Desktop/search/build"
+			"value" : "/home/edauandes/Desktop/EDA/search/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -375,11 +375,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Enable/Disable output of compile commands during generation."
 				}
 			],
 			"type" : "BOOL",
-			"value" : "TRUE"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -451,7 +451,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/edauandes/Desktop/search"
+			"value" : "/home/edauandes/Desktop/EDA/search"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1047,7 +1047,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/edauandes/Desktop/search/build"
+			"value" : "/home/edauandes/Desktop/EDA/search/build"
 		},
 		{
 			"name" : "search_IS_TOP_LEVEL",
@@ -1071,7 +1071,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/edauandes/Desktop/search"
+			"value" : "/home/edauandes/Desktop/EDA/search"
 		}
 	],
 	"kind" : "cache",

@@ -18,12 +18,17 @@ vector<string> readFile(const string& fileName) {
     return array;
 }
 
-int busquedaSecuencial(const vector<string> array, const string& x) {
+int busquedaSecuencial(const vector<string>& array_words, const string& key) {
     int count = 0;
+    for(int i = 0; i < 9999; i++) { //9.999 es solo para el archivo D10000
+        if(array_words[i] == key) {
+            count++;
+        }
+    }
     return count;
 }
 
-int busquedaBinaria(const vector<string>& array, const string& x) {
+int busquedaBinaria(const vector<string>& array_words, const string& key) {
     return 5;
 }
 

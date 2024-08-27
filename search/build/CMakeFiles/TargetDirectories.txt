@@ -1,3 +1,0 @@
-/home/edauandes/Desktop/Tarea/build/CMakeFiles/test.dir
-/home/edauandes/Desktop/Tarea/build/CMakeFiles/edit_cache.dir
-/home/edauandes/Desktop/Tarea/build/CMakeFiles/rebuild_cache.dir

@@ -1,8 +1,8 @@
-#ifndef SEARCH_SEARCH_HPP
-#define SEARCH_SEARCH_HPP
+#pragma once
+#include <vector>
+#include <string>
+using namespace std;
 
-namespace search {
-    void busquedaSecuencial(int n);
-}
-
-#endif
+int busquedaSecuencial(const vector<string>& array, const string& x);
+int busquedaBinaria(const vector<string>& array, const string& x);
+vector<string> readFile(const string& fileName);

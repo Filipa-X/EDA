@@ -1,11 +1,15 @@
 #include <iostream>
 #include "search/sort.hpp"
 #include "search/utils.hpp"
+using namespace std;
 
 namespace sort{
-
-    int split_qs(char* A, int i, int j){
-
+	
+    int split_qs(string* A, int i, int j){
+		/***
+		 * split for quicksort
+		 * i,j are the endpoints
+		 */
 		int p = getRandomInt(i, j);
 
 		while (i  < j) {
@@ -30,7 +34,7 @@ namespace sort{
 		return p;
 	}
 
-	void quickSort(char* A, int i, int j){
+	void quickSort(string* A, int i, int j){
 		if (i < j){
 			int k = split_qs(A, i, j);
 			quickSort(A, i, k-1);
@@ -39,7 +43,8 @@ namespace sort{
 	}
 
 
-	void quickSort(char* A, int n){
+	void quickSort(string* A, int n){
 		quickSort(A, 0, n - 1);
 	}
+
 }

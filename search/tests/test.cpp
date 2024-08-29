@@ -18,22 +18,35 @@ int main(int argc, char* argv[]) {
 
     string archivoDiccionario = argv[1];
 
-    string myText;
+    string keysText;
 
-	// Read from the text file
-	ifstream MyReadFile("Nc.txt");
-	string keys[1000000];
+	ifstream keysReadFile("Nc.txt");
+	string* keys = new string[1000000];
 
-	// Use a while loop together with the getline() function to read the file line by line
 	int i = 0;
-	while (getline (MyReadFile, myText)) {
-	// Output the text from the file
-		keys[i] = myText;
+	while (getline (keysReadFile, keysText)) {
+		keys[i] = keysText;
 		i++;
 	}
+
+    string wordsText;
+
+	ifstream wordsReadFile(archivoDiccionario);
+	string* words = new string[10000]; //cambiar segun el test que se quiera realizar
+
+	int j = 0;
+	while (getline (wordsReadFile, wordsText)) {
+		words[j] = wordsText;
+		j++;
+	}
+
+    keysReadFile.close();
+    wordsReadFile.close();
+
     cout << keys[0] << endl;
-/******************
-    vector<string> words = readFile(archivoDiccionario);
+    cout << keys[999999] << endl;
+    cout << words[0] << endl;
+    cout << words[9999] << endl;
 
     long totalElapsedTime = 0;
 
@@ -48,10 +61,12 @@ int main(int argc, char* argv[]) {
         cout << elapsed << endl;
     }
 
+/*************************
 
-    vector<string> words_sort = words;
+        string* words_sort = words;
         int low = 0;
-        int high = words_sort.size() - 1;
+        int high = 9999; //9999 hay que cambiarlo segun el test que se quiera hacer
+        
         quicksort(words_sort, low, high);
     int y = 0;
     for(int k = 0; k < keys.size() - 1; k++) {

@@ -1,5 +1,4 @@
 #include "search/sort.hpp"
-#include "search/utils.hpp"
 #include "search/search.hpp"
 #include <chrono>
 #include <iostream>
@@ -52,13 +51,16 @@ int main(int argc, char* argv[]) {
 
 
     for(int j = 0; j < 999999; j++) { //999.999 es fijo porque keys son 1.000.000
+        string* wordsCopy = words;
         auto start = chrono :: high_resolution_clock :: now();
-        int count = busquedaSecuencial(words, keys[j]);
+        quickSort(wordsCopy, 0, 10000);
         auto end = chrono :: high_resolution_clock :: now();
 
         long elapsed = getElapsedTime(start, end);
         totalElapsedTime += elapsed;
         cout << elapsed << endl;
+        cout << words[0] << endl;
+        cout << wordsCopy[0] << endl;
     }
 
 /*************************

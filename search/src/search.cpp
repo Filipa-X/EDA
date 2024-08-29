@@ -18,7 +18,20 @@ int busquedaSecuencial(string* array_words, const string& key) {
     return count;
 }
 
-
+int busquedaBinaria(string* words, int i, int j, const string& key) {
+     if(i <= j) {
+        int k = (i+j) / 2;
+        if(key == words[k]) {
+            return k;
+        }
+        if (key < words[k]) {
+            return busquedaBinaria(words, i, k-1, key);
+        } else {
+            return busquedaBinaria(words, k+1, j, key);
+        }
+     }
+    return -1;
+}
 
 
 

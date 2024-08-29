@@ -4,4 +4,5 @@
 using namespace std;
 
 int busquedaSecuencial(string* array_words, const string& key);
-//int busquedaBinaria(const vector<string>& array_words, const string& key);
+int busquedaBinaria(string* words, int i, int j, const string& key);
+

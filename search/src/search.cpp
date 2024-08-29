@@ -8,9 +8,9 @@ using namespace std;
 #include "search/utils.hpp"
 using namespace std;
 
-int busquedaSecuencial(string* array_words, const string& key) {
+int busquedaSecuencial(string* array_words, const string& key, int n) {
     int count = 0;
-    for(int i = 0; i < 10000; i++) { 
+    for(int i = 0; i < n; i++) { 
         if(array_words[i] == key) {
             count++;
         }

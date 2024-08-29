@@ -1,6 +1,9 @@
 {
     "cmake.sourceDirectory": "/home/edauandes/Desktop/EDA/search",
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "string": "cpp",
+        "iosfwd": "cpp",
+        "chrono": "cpp"
     }
 }

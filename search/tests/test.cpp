@@ -42,15 +42,11 @@ int main(int argc, char* argv[]) {
     keysReadFile.close();
     wordsReadFile.close();
 
-    cout << keys[0] << endl;
-    cout << keys[999999] << endl;
-    cout << words[0] << endl;
-    cout << words[9999] << endl;
-
     long totalElapsedTime = 0;
 
 
-    for(int j = 0; j < 999999; j++) { //999.999 es fijo porque keys son 1.000.000
+    //for(int j = 0; j < 999999; j++) { //999.999 es fijo porque keys son 1.000.000
+        cout << words[0] << endl;
         string* wordsCopy = words;
         auto start = chrono :: high_resolution_clock :: now();
         quickSort(wordsCopy, 0, 10000);
@@ -58,10 +54,11 @@ int main(int argc, char* argv[]) {
 
         long elapsed = getElapsedTime(start, end);
         totalElapsedTime += elapsed;
-        cout << elapsed << endl;
         cout << words[0] << endl;
         cout << wordsCopy[0] << endl;
-    }
+        cout << elapsed << endl;
+
+    //}
 
 /*************************
 

@@ -1,3 +1,0 @@
-/home/edauandes/EDA/search/build/CMakeFiles/test.dir
-/home/edauandes/EDA/search/build/CMakeFiles/edit_cache.dir
-/home/edauandes/EDA/search/build/CMakeFiles/rebuild_cache.dir

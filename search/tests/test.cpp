@@ -15,7 +15,7 @@ long getElapsedTime(chrono :: time_point < chrono :: high_resolution_clock > t1,
 
 int main(int argc, char* argv[]) {
 
-    int n = 200000;
+    int n = 400000;
 
     string archivoDiccionario = argv[1];
 
@@ -33,8 +33,7 @@ int main(int argc, char* argv[]) {
     string wordsText;
 
 	ifstream wordsReadFile(archivoDiccionario);
-	string* words = new string[n]; //cambiar segun el test que se quiera realizar
-
+	string* words = new string[n]; 
 	int j = 0;
 	while (getline (wordsReadFile, wordsText)) {
 		words[j] = wordsText;
@@ -63,8 +62,10 @@ int main(int argc, char* argv[]) {
             PalabrasSecuencial++;
     }
     }
-/*******
+
+    auto startSort = chrono :: high_resolution_clock :: now();
     quickSort(words, n);
+    auto endSort = chrono :: high_resolution_clock :: now();
 
     for(int j = 0; j < 999999; j++) { //999.999 es fijo porque keys son 1.000.000
         auto start2 = chrono :: high_resolution_clock :: now();
@@ -77,16 +78,21 @@ int main(int argc, char* argv[]) {
             PalabrasBinomial++;
     }
     }
-******/    
 
+    
 
     totalElapsedTimeSecuential = totalElapsedTimeSecuential/1000000;
-    totalElapsedTimeBinarie = totalElapsedTimeBinarie/1000000;
     cout << "El tiempo promedio de la busqueda Secuencial fue de: " << totalElapsedTimeSecuential << endl;
     cout << "La cantidad de elementos encontrados con la busqueda secuencial fue de: " << PalabrasSecuencial << endl;
-    //cout << "El tiempo promedio de la busqueda Binaria fue de: " << totalElapsedTimeBinarie << endl;
-    //cout << "La cantidad de elementos encontrados con la busqueda Binaria fue de: " << PalabrasBinomial << endl;
 
+    cout << "tiempo que tomó a quicksort realizar el ordenamiento: " << getElapsedTime(startSort, endSort)<< endl;
+
+    totalElapsedTimeBinarie = totalElapsedTimeBinarie/1000000;
+    cout << "El tiempo promedio de la busqueda Binaria fue de: " << totalElapsedTimeBinarie << endl;
+    
+    totalElapsedTimeBinarie = (totalElapsedTimeBinarie + getElapsedTime(startSort,endSort));
+    cout << "El tiempo promedio de la busqueda Binaria + sort fue de: " << totalElapsedTimeBinarie << endl;
+    cout << "La cantidad de elementos encontrados con la busqueda Binaria más el sort fue de: " << PalabrasBinomial << endl;
 
     return 0;
 }
